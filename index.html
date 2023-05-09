@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Form Control Web Form 2.0 Basic</title>
+
+</head>
+
+<body>
+  <!-- 
+HTML forms are required if you want to collect some data 
+from of the site visitor. 
+
+An HTML form facilitates the user to enter data that is to 
+be sent to the server for processing.
+-->
+  <form action="server url" method="get or post(default is get)">
+
+    <!-- 
+   The <fieldset> tag is used to group related elements in a form.
+   The <fieldset> tag draws a box around the related elements.
+-->
+    <fieldset>
+      <legend>Login Info:</legend>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" autofocus required placeholder="Enter Email" />
+
+      <br />
+      <br />
+
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" autocomplete="off" />
+    </fieldset>
+
+    <br />
+    <br />
+
+    <label for="name">Name: </label>
+    <input type="text" autocomplete="on" id="name" name="name" />
+
+    <br />
+    <br />
+
+    <!-- 
+ The iPhone and some Android devices using the input type="tel" to 
+ change the virtual keyboard with a numeric keypad.
+ -->
+    <label for="mobileno">Mobile No: </label>
+    <input type="tel" placeholder="xx-xxxx-xxxx" id="mobileno" name="mobileno" />
+
+    <br />
+    <br />
+
+    <label for="dob">Date Of Birth:(Calender Will open in Chrome) </label>
+    <input type="date" id="dob" name="dob" />
+
+    <br />
+    <br />
+
+    <label for="gender">Gender: </label>
+    <input type="radio" id="gender" name="gender" value="male" />Male
+    <input type="radio" id="gender" name="gender" value="female" />Female
+
+    <br />
+    <br />
+
+    Hobby:<br>
+    <input type="checkbox" id="cricket" name="cricket" value="cricket" />
+    <label for="cricket">Cricket</label>
+    <input type="checkbox" id="football" name="football" value="football" />
+    <label for="football">Football</label>
+    <input type="checkbox" id="hockey" name="hockey" value="hockey" />
+    <label for="hockey">Hockey</label>
+
+    <br />
+    <br />
+    <label for="country">Select Country:</label>
+    <select name="country" id="country" style="width:160px">
+      <option value="india">india</option>
+      <option value="pakistan">pakistan</option>
+      <option value="africa">africa</option>
+      <option value="china">china</option>
+      <option value="other">other</option>
+    </select>
+
+    <br />
+    <br />
+
+    <label for="ADDRESS">Address:</label>
+    <textarea rows="6" cols="50"></textarea>
+
+    <br />
+    <br />
+
+    <label for="file-select">Select File:</label>
+    <input type="file" name="upload" id="file-select">
+
+    <br />
+    <br />
+
+    <label for="file-select">Select JPG/PNG File:</label>
+    <input type="file" accept=".jpg, .png" name="upload" id="file-select">
+
+    <br />
+    <br />
+
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+
+  </form>
+
+</body>
+
+</html>
